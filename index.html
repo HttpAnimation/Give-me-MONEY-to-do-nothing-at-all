@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give me MONEY for Nothing</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .btc-address, .xmr-address, .etc-address, .fio-address {
+            background-color: #222;
+            border: 1px solid #444;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 24px;
+        }
+        .copy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .random-stuff {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        .iframe-container {
+            margin-top: 30px;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Give me MONEY to do nothing at all</h1>
+        <p>Send Bitcoin to the following address:</p>
+        <div class="btc-address" id="btc-address">bc1qfq57dqfkawnwdvdczcyx20gqzqre8q2jhcq2qv</div>
+        <button class="copy-button" onclick="copyBitcoinAddress()">Copy Bitcoin Address</button>
+        <p>Send XMR to the following address:</p>
+        <div class="xmr-address" id="xmr-address">4Ah4JgyvAXtJ2a5wgGUS3bBeXPMciJo62NMwZ7cY11xF3ok9tfwvhoF2hE8hiSmfdf1yGDpFD8NrcVEk5iFsonWcBCcRdAh</div>
+        <button class="copy-button" onclick="copyXMRAddress()">Copy XMR Address</button>
+        <p>Send ETC to the following address:</p>
+        <div class="etc-address" id="etc-address">0x85e045778Cac44fa0ba2cE88C1D1B8464Be83fAf</div>
+        <button class="copy-button" onclick="copyETCAddress()">Copy ETC Address</button>
+        <p>Send FIO to the following address:</p>
+        <div class="fio-address" id="fio-address">FIO5HmXHTkvYiXFvJwq6amSUv8P5SBoKgzibi2B9YqT2Qjc7rsMbX</div>
+        <button class="copy-button" onclick="copyFIOAddress()">Copy FIO Address</button>
+        <div class="random-stuff">
+            Or you = poo poo face
+        </div>
+        <div class="iframe-container">
+            <!-- Replace the src URL with the website you want to embed -->
+        </div>
+    </div>
+
+    <script>
+        function copyBitcoinAddress() {
+            const btcAddress = document.getElementById("btc-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = btcAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Bitcoin address copied to clipboard!");
+        }
+
+        function copyXMRAddress() {
+            const xmrAddress = document.getElementById("xmr-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = xmrAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("XMR address copied to clipboard!");
+        }
+
+        function copyETCAddress() {
+            const etcAddress = document.getElementById("etc-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = etcAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("ETC address copied to clipboard!");
+        }
+
+        function copyFIOAddress() {
+            const fioAddress = document.getElementById("fio-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = fioAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("FIO address copied to clipboard!");
+        }
+    </script>
+</body>
+</html>
