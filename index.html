@@ -14,7 +14,7 @@
             text-align: center;
             margin-top: 50px;
         }
-        .btc-address, .xmr-address, .etc-address, .fio-address {
+        .btc-address, .xmr-address, .etc-address, .fio-address, .ltc-address, .bch-address, .doge-address, .feathercoin-address, .celo-address, .tezos-address, .bnb-address, .rbtc-address, .dash-address, .algo-address, .sol-address, .grs-address, .trx-address, .ftm-address, .dgb-address, .matic-address {
             background-color: #222;
             border: 1px solid #444;
             border-radius: 5px;
@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Wallet recive address</h1>
+        <h1>Wallet receive addresses</h1>
         <p>Send Bitcoin to the following address:</p>
         <div class="btc-address" id="btc-address">bc1qfq57dqfkawnwdvdczcyx20gqzqre8q2jhcq2qv</div>
         <button class="copy-button" onclick="copyBitcoinAddress()">Copy Bitcoin Address</button>
@@ -59,6 +59,54 @@
         <p>Send FIO to the following address:</p>
         <div class="fio-address" id="fio-address">FIO5HmXHTkvYiXFvJwq6amSUv8P5SBoKgzibi2B9YqT2Qjc7rsMbX</div>
         <button class="copy-button" onclick="copyFIOAddress()">Copy FIO Address</button>
+        <p>Send Litecoin to the following address:</p>
+        <div class="ltc-address" id="ltc-address">ltc1qqvnyp674jrjphp63vqlpe8n6tp6fsh8m0rntag</div>
+        <button class="copy-button" onclick="copyLTCAddress()">Copy LTC Address</button>
+        <p>Send Bitcoin Cash to the following address:</p>
+        <div class="bch-address" id="bch-address">qqch08xa03zl08qer3cnl2lgmf5yunnggyt6xj3uw0</div>
+        <button class="copy-button" onclick="copyBCHAddress()">Copy BCH Address</button>
+        <p>Send Dogecoin to the following address:</p>
+        <div class="doge-address" id="doge-address">DKo7RcsERyCEx7b7pniomb37MEFFfnrMHK</div>
+        <button class="copy-button" onclick="copyDOGEAddress()">Copy DOGE Address</button>
+        <p>Send Feathercoin to the following address:</p>
+        <div class="feathercoin-address" id="feathercoin-address">fc1q3qqls09m67gv0l64tgtwvf23l4jeareeekf62n</div>
+        <button class="copy-button" onclick="copyFeathercoinAddress()">Copy Feathercoin Address</button>
+        <p>Send Celo to the following address:</p>
+        <div class="celo-address" id="celo-address">0x9a501CB75504BaAdC4334605AF9a6522c188EAb4</div>
+        <button class="copy-button" onclick="copyCeloAddress()">Copy Celo Address</button>
+        <p>Send Tezos to the following address:</p>
+        <div class="tezos-address" id="tezos-address">web+tezos:8pEg33cGoM1ZXwp6ws5s7i2KtDGcrES5vrdtQkBF6BFhFQH9qNKKzEnfJH3uxX1Hv3TeAPdqm2oeWQaFfUMJiTcaQMnYKoJtSChJaFkHLHQRBJvAc1b2CTtzGyhhBqojzghiqZ3XEvWk4B5ZZ</div>
+        <button class="copy-button" onclick="copyTezosAddress()">Copy Tezos Address</button>
+        <p>Send BNB to the following address:</p>
+        <div class="bnb-address" id="bnb-address">0x8C663F64bFfB9Eb34589b8757cD1BEE37977124A</div>
+        <button class="copy-button" onclick="copyBNBAddress()">Copy BNB Address</button>
+        <p>Send R-BTC to the following address:</p>
+        <div class="rbtc-address" id="rbtc-address">0xa15FCEb14A053Eba49c4dc5034e66e4e7d2F3479</div>
+        <button class="copy-button" onclick="copyRBTCAddress()">Copy R-BTC Address</button>
+        <p>Send Dash to the following address:</p>
+        <div class="dash-address" id="dash-address">XbrCNYJQBKcnoeA1vntzE387wZmBE57JYp</div>
+        <button class="copy-button" onclick="copyDashAddress()">Copy Dash Address</button>
+        <p>Send Algorand to the following address:</p>
+        <div class="algo-address" id="algo-address">UMUNKIJSQC36BJJMIIFD4S4CDNQGV4G23HFGZMKSSOJ4YBATGU62Y5I4AY</div>
+        <button class="copy-button" onclick="copyAlgoAddress()">Copy Algo Address</button>
+        <p>Send Solana to the following address:</p>
+        <div class="sol-address" id="sol-address">CA9RgU7ty6qNsfARL3MgQ3P53UQnStU7Ppshjx8B5z1Y</div>
+        <button class="copy-button" onclick="copySolAddress()">Copy Sol Address</button>
+        <p>Send Groestlcoin to the following address:</p>
+        <div class="grs-address" id="grs-address">grs1qgc88shng27rpyu8aqkeygk5d3ssuks7dj384k4</div>
+        <button class="copy-button" onclick="copyGRSAddress()">Copy GRS Address</button>
+        <p>Send Tron to the following address:</p>
+        <div class="trx-address" id="trx-address">TTuQpp1yyXTN4a83FUoo6dWSh3h77bn2jB</div>
+        <button class="copy-button" onclick="copyTRXAddress()">Copy TRX Address</button>
+        <p>Send Fantom to the following address:</p>
+        <div class="ftm-address" id="ftm-address">0x1C9E6F4F0f0458FB9B9fE849a50ac3d9F08F285d</div>
+        <button class="copy-button" onclick="copyFTMAddress()">Copy FTM Address</button>
+        <p>Send DigiByte to the following address:</p>
+        <div class="dgb-address" id="dgb-address">dgb1qa5kuy5wsveqrvt4lsraq48l0727f9lw33rtemj</div>
+        <button class="copy-button" onclick="copyDGBAddress()">Copy DGB Address</button>
+        <p>Send Matic to the following address:</p>
+        <div class="matic-address" id="matic-address">0x906Aafee394334EcEe33047A2E441A030FAB2F0A</div>
+        <button class="copy-button" onclick="copyMATICAddress()">Copy MATIC Address</button>
         <div class="random-stuff">
             Or you = poo poo face
         </div>
@@ -110,6 +158,171 @@
             document.execCommand("copy");
             document.body.removeChild(textArea);
             alert("FIO address copied to clipboard!");
+        }
+
+        function copyLTCAddress() {
+            const ltcAddress = document.getElementById("ltc-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = ltcAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Litecoin address copied to clipboard!");
+        }
+
+        function copyBCHAddress() {
+            const bchAddress = document.getElementById("bch-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = bchAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Bitcoin Cash address copied to clipboard!");
+        }
+
+        function copyDOGEAddress() {
+            const dogeAddress = document.getElementById("doge-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = dogeAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Dogecoin address copied to clipboard!");
+        }
+
+        function copyFeathercoinAddress() {
+            const feathercoinAddress = document.getElementById("feathercoin-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = feathercoinAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Feathercoin address copied to clipboard!");
+        }
+
+        function copyCeloAddress() {
+            const celoAddress = document.getElementById("celo-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = celoAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Celo address copied to clipboard!");
+        }
+
+        function copyTezosAddress() {
+            const tezosAddress = document.getElementById("tezos-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = tezosAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Tezos address copied to clipboard!");
+        }
+
+        function copyBNBAddress() {
+            const bnbAddress = document.getElementById("bnb-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = bnbAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("BNB address copied to clipboard!");
+        }
+
+        function copyRBTCAddress() {
+            const rbtcAddress = document.getElementById("rbtc-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = rbtcAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("R-BTC address copied to clipboard!");
+        }
+
+        function copyDashAddress() {
+            const dashAddress = document.getElementById("dash-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = dashAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Dash address copied to clipboard!");
+        }
+
+        function copyAlgoAddress() {
+            const algoAddress = document.getElementById("algo-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = algoAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Algo address copied to clipboard!");
+        }
+
+        function copySolAddress() {
+            const solAddress = document.getElementById("sol-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = solAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Sol address copied to clipboard!");
+        }
+
+        function copyTRXAddress() {
+            const trxAddress = document.getElementById("trx-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = trxAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("TRX address copied to clipboard!");
+        }
+
+        function copyFTMAddress() {
+            const ftmAddress = document.getElementById("ftm-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = ftmAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("FTM address copied to clipboard!");
+        }
+
+        function copyDGBAddress() {
+            const dgbAddress = document.getElementById("dgb-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = dgbAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("DGB address copied to clipboard!");
+        }
+
+        function copyMATICAddress() {
+            const maticAddress = document.getElementById("matic-address");
+            const textArea = document.createElement("textarea");
+            textArea.value = maticAddress.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("MATIC address copied to clipboard!");
         }
     </script>
 </body>
