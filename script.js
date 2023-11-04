@@ -206,3 +206,14 @@ function copyMATICAddress() {
     document.body.removeChild(textArea);
     alert("MATIC address copied to clipboard!");
 }
+
+function copyCashappAddress() {
+    const cashapp = document.getElementById("cashapp");
+    const textArea = document.createElement("textarea");
+    textArea.value = cashapp.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+    alert("cashapp address copied to clipboard!");
+}
